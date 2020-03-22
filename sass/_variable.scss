@@ -1,0 +1,66 @@
+//Variable
+
+$base-color: #fff;
+$primary-color: #22a7f0;
+$secondary-color: #4b4b4b;
+$three-color: #353535;
+$family: 'Play', 'Open Sans', sans-serif;
+$size: 14px;
+
+//Media
+$x-large: 1400px;
+$large: 1200px;
+$notebook: 992px;
+$tablet: 766px;
+$m-tablet: 575px;
+$mobil: 480px;
+$small: 350px;
+$x-small: 250px;
+$x: 190px;
+
+//Responsive-İmg
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+//Container
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
