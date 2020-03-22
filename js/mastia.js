@@ -130,3 +130,43 @@ $(".project-tab").pTab({
     pTabElem: 'li',
     pContent: '.tab-content'
 });
+
+//Form-Validation
+$(document).ready(function() {
+    $('#submit').click(function() {
+        isim=$('#isim').val();
+        soyisim=$('#soyisim').val();
+        email=$('#email').val();
+        tel=$('#tel').val();
+        messaage=$('#message').val();
+        uyari="";
+        //İsim
+        if(isim=="") {
+            uyari+="İsim Alanı boş olamaz";
+        }
+        else if(isim.length<3) {
+            uyari+="İsim Alanı 3 Karakterden az olamaz";
+        }
+        //Soyisim
+        if(soyisim=="") {
+            uyari+="Soyisimi Alanı boş olamaz";
+        }
+        else if(soyisim.length<3) {
+            uyari+="İsim Alanı 2 Karakterden az olamaz";
+        }
+        //Email
+        if(email=="") {
+            uyari+="Email Alanı boş olamaz";
+        }
+        else if(email.length<3) {
+            uyari+="Email Alanı 7 Karakterden az olamaz";
+        }
+        //Tel
+        if(tel.length!=11) {
+            uyari+="Telefon numaranız 11 haneli olmalıdır.";
+        }
+
+        $('.uyari').text(uyari);
+
+    });
+});
